@@ -9,10 +9,17 @@ class Controller
 
     protected $uploaddir;
 
-    public function __construct($dir, $uploaddir)
+    public function __construct($dir)
     {
         $this->dir       = $dir;
-        $this->uploaddir = $uploaddir;
+        $this->uploaddir = $dir . "/images/";
+
+        if (!is_dir($this->dir)) {
+            mkdir($this->dir); // створення каталогу 'landing'
+        }
+        if (!is_dir($this->uploaddir)) {
+            mkdir($this->uploaddir); // створення каталогу 'images'
+        }
     }
 
     /**
@@ -97,3 +104,6 @@ class Controller
         ob_flush();
     }
 }
+
+$controller = new Controller('../landing');
+$controller->action();
