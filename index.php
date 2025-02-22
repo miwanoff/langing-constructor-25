@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-
 <head>
     <meta charset="UTF-8">
     <title>Landing-page constructor</title>
@@ -11,7 +10,6 @@
         padding: 5px;
         width: 200px;
     }
-
 
     a {
         display: block;
@@ -23,12 +21,10 @@
         text-align: center;
     }
 
-
     #editor {
         border: solid grey;
         height: 200px;
     }
-
 
     .design {
         padding: 5px 20px;
@@ -42,7 +38,6 @@
         color: #2c539e;
     }
 
-
     .file_upload {
         position: relative;
         overflow: hidden;
@@ -51,16 +46,13 @@
         line-height: 2em
     }
 
-
     .file_upload>input[type="button"] {
         /*height: 100%*/
     }
 
-
     .file_upload>div {
         padding-left: 1em
     }
-
 
     .file_upload input[type=file] {
         position: absolute;
@@ -100,7 +92,7 @@
     </form>
     <iframe width="800" height="400" src="landing/index.html"></iframe>
     <p>* поля, обов'язкові до заповнення </p>
-    <a href='landing.zip' class="design" download>Скачать результат</a>
+    <a href='landing.zip' class="design" download>Завантажити результат</a>
 </body>
 
 </html>
