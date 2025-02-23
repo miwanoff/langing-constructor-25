@@ -6,9 +6,9 @@ class Model
     // private $blocks = [];
     private $name;
 
-    private $blocks = array();
+    private $blocks = [];
 
-    public function __construct($name = "Landing page", $blocks = array())
+    public function __construct($blocks = [], $name = "Landing page")
     {
         $this->name   = $name;
         $this->blocks = $blocks;

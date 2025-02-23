@@ -5,7 +5,7 @@ class Header extends Block
     private $logo_img;
     private $landing_header;
 
-    public function __construct($logo_img = "", $landing_header = "Header")
+    public function __construct($landing_header = "Header", $logo_img = "" )
     {
         $this->logo_img       = $logo_img;
         $this->landing_header = $landing_header;
